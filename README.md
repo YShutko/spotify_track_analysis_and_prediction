@@ -1,10 +1,9 @@
 # Spotify Track Analytics Popularity Prediction
 
 ## Content
-* [Readme.md](https://github.com/YShutko/spotify_track_analytics_popularity_prediction/blob/1eb084f166f61e2ec0c6dcf23cdb3fea6f7f3cb8/README.md)
-* [Kanban Project Board](https://github.com/users/YShutko/projects/6)
-* [Datasets](https://github.com/YShutko/spotify_track_analytics_popularity_prediction/tree/926c78849c653732de5f592223b0ff7cda01fab8/data) 
-* [Jupyter notebook]()
+* [Readme.md](https://github.com/YShutko/CI_spotify_track_analysis/blob/210b32764e51e58e27a977b8c2a8e6f54010f5ba/README.md)
+* [Datasets](https://github.com/YShutko/CI_spotify_track_analysis/tree/210b32764e51e58e27a977b8c2a8e6f54010f5ba/data) 
+* [Jupyter notebooks](https://github.com/YShutko/CI_spotify_track_analysis/tree/master/notebooks)
 
 ## Dataset Content
 The data set used for this project: [Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset). The collection of ~114,000 songs across 125 genres with features like danceability, energy, tempo, and popularity. Ideal for audio analysis, genre classification, and music trend exploration.
