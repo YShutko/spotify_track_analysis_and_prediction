@@ -1,3 +1,7 @@
+<p align="center">
+<img src="assets/cbacd32f-cd5a-4c3f-8b46-eba4db5f3425.png" width="300">
+</p>
+
 # Spotify Track Analytics
 
 Analyze ~114k Spotify tracks to understand what drives popularity, explore mood/genre patterns, and prototype lightweight prediction tools for playlist building or A&R triage.
