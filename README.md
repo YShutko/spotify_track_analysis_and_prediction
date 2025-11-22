@@ -45,7 +45,9 @@ Gradio on local host: Running on local [URL](http://127.0.0.1:7865)
 - [flagged](https://github.com/YShutko/CI_spotify_track_analysis/blob/3c1d5b469e04c4a46cf01e3d99477fac8d672044/models_widgets/.gradio/flagged/dataset1.csv) – Sample flagged input from a previous Gradio run.
   
 ## Plot Highlights
-- Correlation Heatmap (`plots/correlation_heatmap.png`): Popularity has modest positive ties to loudness/energy; acousticness is negatively related to loudness/energy; energy and loudness are strongly correlated.
+- Correlation Heatmap:
+<img src="plots/correlation_heatmap.png" width="600">
+ Popularity has modest positive ties to loudness/energy; acousticness is negatively related to loudness/energy; energy and loudness are strongly correlated.
 - Popularity Distribution (`plots/distribution_of_track_popularity.png`): Long tail of low-popularity tracks with a broad mid-popularity hump; few tracks exceed 70+.
 - Top Genres by Volume (`plots/top_10_genres_by_number of tracks.png`): Acoustic, electronic, j rock, reggaeton, and mandopop dominate track counts.
 - Popularity by Top Genres (`plots/pupolarity_distribution_by 5_top_genres.png`): Electronic and mandopop show higher medians; reggaeton is wide-spread with many low outliers but some very high-popularity tracks.
