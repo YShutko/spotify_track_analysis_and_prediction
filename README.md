@@ -295,7 +295,7 @@ XGBoost is slightly smoother and more regularized, but not significantly better 
 
 ## Interactive Prediction Tools
 - **Notebook widget ([ipywidgets.ipynb](https://github.com/YShutko/CI_spotify_track_analysis/blob/3c1d5b469e04c4a46cf01e3d99477fac8d672044/models_widgets/ipywidgets.ipynb))**  
-  Downloads a selected model from the Hugging Face repo `YShutko/spotify-popularity-models`, loads macro-genre options from the cleaned data, and exposes sliders/dropdowns to test popularity predictions inline.
+  Downloads a selected model from the [Hugging Face repo](https://huggingface.co/YShutko/spotify-popularity-models/tree/main), loads macro-genre options from the cleaned data, and exposes sliders/dropdowns to test popularity predictions inline.
 - **Gradio app ([gradio.ipynb](https://github.com/YShutko/CI_spotify_track_analysis/blob/3c1d5b469e04c4a46cf01e3d99477fac8d672044/models_widgets/gradio.ipynb))**  
   Loads multiple Hugging Face models and builds a Gradio UI with sliders and a genre dropdown. Use it to share a quick web demo; Gradio handles launching and optional sharing links. (Note: Ensure the selected model is passed through in the predict function before production use.)
 
