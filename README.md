@@ -16,26 +16,26 @@ Gradio on local host: Running on local [URL](http://127.0.0.1:7865)
 - Source: [Kaggle – Spotify Tracks Dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
 - Files: [raw data](https://github.com/YShutko/CI_spotify_track_analysis/blob/3c1d5b469e04c4a46cf01e3d99477fac8d672044/data/spotify_dataset.csv) (raw, ~20 MB) and [cleaned dataset](https://github.com/YShutko/CI_spotify_track_analysis/blob/3c1d5b469e04c4a46cf01e3d99477fac8d672044/data/spotify_cleaned_data.csv) (preprocessed subset used in all notebooks).
 - The dataset consists of the following columns:
-* track_id: Unique Spotify identifier for each track.
-* artists: List of artists performing the track, separated by semicolons.
-* album_name: Title of the album where the track appears.
-* track_name: Title of the song.
-* popularity: Score from 0–100 based on recent play counts; higher means more popular.
-* duration_ms: Length of the track in milliseconds.
-* explicit: Indicates whether the track contains explicit content (True/False).
-* danceability: Score (0.0–1.0) measuring how suitable the song is for dancing.
-* energy: Score (0.0–1.0) reflecting intensity, speed, and loudness.
-* key: Musical key using Pitch Class notation (0 = C, 1 = C♯/D♭, etc.).
-* loudness: Overall volume of the track in decibels.
-* mode: Indicates scale type (1 = major, 0 = minor).
-* speechiness: Score estimating spoken content in the track.
-* cousticness: Likelihood (0.0–1.0) that the song is acoustic.
-* instrumentalness: Probability that the track has no vocals.
-* liveness: Measures if the song was recorded live (higher = more live).
-* valence: Positivity of the music (0.0 = sad, 1.0 = happy).
-* tempo: Speed of the song in beats per minute (BPM).
-time_signature: Musical meter (e.g. 4 = 4/4 time).
-track_genre: Musical genre classification of the track.
+  * track_id: Unique Spotify identifier for each track.
+  * artists: List of artists performing the track, separated by semicolons.
+  * album_name: Title of the album where the track appears.
+  * track_name: Title of the song.
+  * popularity: Score from 0–100 based on recent play counts; higher means more popular.
+  * duration_ms: Length of the track in milliseconds.
+  * explicit: Indicates whether the track contains explicit content (True/False).
+  * danceability: Score (0.0–1.0) measuring how suitable the song is for dancing.
+  * energy: Score (0.0–1.0) reflecting intensity, speed, and loudness.
+  * key: Musical key using Pitch Class notation (0 = C, 1 = C♯/D♭, etc.).
+  * loudness: Overall volume of the track in decibels.
+  * mode: Indicates scale type (1 = major, 0 = minor).
+  * speechiness: Score estimating spoken content in the track.
+  * cousticness: Likelihood (0.0–1.0) that the song is acoustic.
+  * instrumentalness: Probability that the track has no vocals.
+  * liveness: Measures if the song was recorded live (higher = more live).
+  * valence: Positivity of the music (0.0 = sad, 1.0 = happy).
+  * tempo: Speed of the song in beats per minute (BPM).
+  * time_signature: Musical meter (e.g. 4 = 4/4 time).
+  * track_genre: Musical genre classification of the track.
 
 ## Repository Layout
 - [Spotify_track_analysis.ipynb](https://github.com/YShutko/CI_spotify_track_analysis/blob/3c1d5b469e04c4a46cf01e3d99477fac8d672044/notebooks/Spotify_track_analysis.ipynb) – EDA, cleaning, feature exploration, visualizations (correlations, genre summaries, energy/valence scatter, duration vs popularity).
