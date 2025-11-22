@@ -328,8 +328,8 @@ XGBoost is slightly smoother and more regularized, but not significantly better 
 * Plotly
 * Seabon
 * Matplotlib
-* sikit-learn
-* gravio
+* scikit-learn
+* gradio
 
 ### Resources:
 
