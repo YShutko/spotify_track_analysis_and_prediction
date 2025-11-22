@@ -221,7 +221,11 @@ Insight: This validates the genre labeling — acoustic tracks rely on real inst
     * Electronic is the only genre with a wide range and significant values above 0.5, indicating many tracks with little or no vocals.
     * All other genres (including acoustic and mandopop) have low instrumentalness (mostly vocal-driven).
 Insight: Instrumental tracks are almost exclusively found in electronic music in this dataset. Other genres are mainly vocal.
-    
+
+
+**Conclusion**
+
+The EDA reveals clear signals in the audio features: popularity skews right (most tracks sit in the lower bins), and higher energy/valence/danceability with moderate tempo cluster toward more popular tracks. Genre patterns emerge but with overlapping distributions; boxplots and heatmaps highlight that no single feature dominates, yet combinations of energy, loudness, and valence matter. This cleaned, feature-aware dataset is now ready for modeling—next steps are to validate these observations with ML models (see ml_models.ipynb), compare feature importances, and test genre-specific or feature-engineered variants to boost predictive power.
  
 ## Models and Comparison (from [ml_models.ipynb](https://github.com/YShutko/CI_spotify_track_analysis/blob/3c1d5b469e04c4a46cf01e3d99477fac8d672044/notebooks/ml_models.ipynb))
 1. **Linear Regression**
@@ -246,7 +250,8 @@ Model:
 * Provides feature importance
 
 Hyperparameters. 
-<img src="assets/Screenshot 2025-11-22 182439.png" width="600">
+
+<img src="assets/Screenshot 2025-11-22 182439.png" width="300">
 
 Performance: MAE: ~4.86, RMSE: ~9.98, R²: ~0.801
 
@@ -266,13 +271,28 @@ Hyperparameter Tuning (RandomizedSearchCV)
 
 Best Parameters Found
 
-<img src="assets/Screenshot 2025-11-22 182351.png" width="600">
+<img src="assets/Screenshot 2025-11-22 182351.png" width="300">
 
 Performance (After Tuning): MAE: ~5.11, RMSE: ~9.99, R²: ~0.800
 
 Nearly identical performance to Random Forest.
 XGBoost is slightly smoother and more regularized, but not significantly better on this dataset.
+
+**Model Comparison Summary**
   
+  | Model                 | MAE ↓    | RMSE ↓   | R² ↑      | Notes                                          |
+| --------------------- | -------- | -------- | --------- | ---------------------------------------------- |
+| **Linear Regression** | ~14.17   | ~19.32   | ~0.25     | Weak performance; linear patterns insufficient |
+| **Random Forest**     | **4.86** | **9.98** | **0.801** | Best overall; strong non-linear learning       |
+| **XGBoost (tuned)**   | 5.11     | 9.99     | 0.800     | Competitive with RF; highly regularized        |
+
+**ML Conclusion**
+* Popularity cannot be modeled using simple linear methods → Linear Regression performs poorly.
+* Tree-based models (Random Forest, XGBoost) capture the underlying non-linear structure extremely well.
+* Both RF and tuned XGBoost reach ~0.80 R², meaning the models successfully explain ~80% of popularity variance.
+* Random Forest achieved the best overall metrics, while XGBoost provides similar performance with more tunability and regularization options.
+* Feature importance analyses show one dominant predictor—artist popularity—followed by tempo, valence, speechiness, and interaction features.
+
 ## Interactive Prediction Tools
 - **Notebook widget ([ipywidgets.ipynb](https://github.com/YShutko/CI_spotify_track_analysis/blob/3c1d5b469e04c4a46cf01e3d99477fac8d672044/models_widgets/ipywidgets.ipynb))**  
   Downloads a selected model from the Hugging Face repo `YShutko/spotify-popularity-models`, loads macro-genre options from the cleaned data, and exposes sliders/dropdowns to test popularity predictions inline.
