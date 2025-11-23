@@ -5,19 +5,19 @@
 # Spotify Track Analysis and Popularity Prediction
 
 Music platforms receive tens of thousands of new tracks every day. Playlist curators, A&R teams, and recommendation algorithms must decide:
-    * Which songs are likely to resonate?
-    * What tracks deserve promotion?
-    * Which hidden gems might perform well?
+* Which songs are likely to resonate?
+* What tracks deserve promotion?
+* Which hidden gems might perform well?
 
 By analyzing audio features, artist signals, and genre traits, we can gain a deeper understanding of what drives a track’s popularity and build models to forecast performance.
 
 This project delivers:
-    * full dataset exploration
-    * feature engineering
-    * ML modeling
-    * interactive user tools (Streamlit app)
-    * a playlist builder
-    * production-ready deployment (HuggingFace)
+* full dataset exploration
+* feature engineering
+* ML modeling
+* interactive user tools (Streamlit app)
+* a playlist builder
+* production-ready deployment (HuggingFace)
 
 ## SPOTIFY POPULARITY PREDICTOR (GRADIO DEMO)
 
