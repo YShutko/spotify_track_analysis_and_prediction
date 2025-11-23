@@ -254,7 +254,7 @@ def main():
 
             # engineered features
             "energy_valence": energy_valence,
-            "loudness_danceability": loudness_danceability,
+            "loudness_danceability": loudness_dance,
             "artist_popularity": artist_popularity,
             "macro_genre": macro_genre
         }])
