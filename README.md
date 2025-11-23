@@ -17,7 +17,7 @@ This project delivers:
     * ML modeling
     * interactive user tools (Streamlit app)
     * a playlist builder
-    * production-ready deployment (HuggingFace + Streamlit Cloud)
+    * production-ready deployment (HuggingFace)
 
 ## SPOTIFY POPULARITY PREDICTOR (GRADIO DEMO)
 
